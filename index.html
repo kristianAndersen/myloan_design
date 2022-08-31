@@ -200,6 +200,7 @@
     padding-bottom: var(--padbottom);
     text-align: center;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .quicklinkbg {
@@ -230,12 +231,8 @@
 
   header ul {
     -webkit-padding-start: 0;
-    margin-top: 2rem;
   }
 
-  header ul li {
-    margin-bottom: 1rem;
-  }
 
   .gblob {
     position: absolute;
@@ -270,7 +267,9 @@
   }
 
   .headerblock img {
-    max-width: 6rem;
+    max-width: 50%;
+    max-height: 50%;
+    aspect-ratio: 1/1;
   }
 
   input {
@@ -407,16 +406,16 @@
       class="container position-relative d-flex flex-column flex-sm-column flex-md-column flex-lg-row ustify-content-sm-inherit h-100"
       style="padding-bottom:0; margin-bottom: 0;">
 
-      <div class="container d-inline-flex flex-column justify-content-center align-items-start ">
+      <div class="container f-gsb w-100 d-inline-flex flex-column justify-content-center align-items-start ">
         <h1 class="text-left">
           <span class="tagline">Do you need a loan?</span><br>
           Be smart - Compare<br>Loan Offers
         </h1>
 
-        <div class="d-flex w-100 g-0 order-sm-0 order-md-1">
+        <div class="d-flex g-0 order-sm-0 order-md-1 justify-content-center w-100">
 
           <div class="headerblock  f-gsb ms-2 pb-1 g-0">
-            <img src="/assets/PersonalLoan_icon.2d92e53a.svg">
+            <img src="/assets/PersonalLoan_icon.29ea4c22.svg">
             <p class="mediumtxt ms-2 " style="color:var(--Black)">Personal<br class="d-lg-none"> Loan</p>
           </div>
 
@@ -432,16 +431,18 @@
 
         </div>
 
-        <ul class="order-sm-1 order-md-0">
-          <li><img src="/assets/checkmark_orange.97323e89.svg"> Compare multiple loan offers</li>
-          <li><img src="/assets/checkmark_orange.97323e89.svg"> 100% free with no extra fees</li>
-          <li><img src="/assets/checkmark_orange.97323e89.svg"> Loan offers are non-binding</li>
+        <ul class="position-relative order-sm-1 order-md-0 mt-2" style="z-index: 5;">
+          <li class="mb-md-2 mb-sm-1"><img src="/assets/checkmark_orange.97323e89.svg"> Compare multiple loan offers</li>
+          <li class="mb-md-2 mb-sm-1"><img src="/assets/checkmark_orange.97323e89.svg"> 100% free with no extra fees</li>
+          <li class="mb-md-2 mb-sm-1"><img src="/assets/checkmark_orange.97323e89.svg"> Loan offers are non-binding</li>
         </ul>
       </div>
 
 
-      <div class="container d-inline-flex flex-column justify-content-end">
+      <div class="container  f-gsb d-flex flex-column align-content-center justify-content-end w-100" style="z-index:0;margin-top: -1.5rem;">
+        
         <img src="/assets/hero_image.574da94a.png">
+      
       </div>
     </div>
   </header>
